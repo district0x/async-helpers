@@ -1,4 +1,4 @@
-(defproject district0x/async-helpers "0.1.2-SNAPSHOT"
+(defproject district0x/async-helpers "0.1.3-SNAPSHOT"
   :description "library of helper functions"
   :url "https://github.com/district0x/async-helpers"
   :license {:name "Eclipse Public License"

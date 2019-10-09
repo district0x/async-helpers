@@ -30,9 +30,9 @@
        ~@body
        (catch :default e#
          (taoensso.timbre/error "Go block exception"
-                                (merge {:error e#
-                                        (ex-data e#)
-                                        ~(district.shared.error-handling/compiletime-info &env &form *ns*)}))
+                                (merge {:error (.-message e#)}
+                                       (ex-data e#)
+                                       ~(district.shared.error-handling/compiletime-info &env &form *ns*)))
          e#))))
 
 (defmacro <?
